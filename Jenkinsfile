@@ -7,6 +7,11 @@ pipeline{
 
 			}
 		}
+		stage('Cheking Docker'){
+			steps{
+				sh 'sudo docker ps'
+			}
+		}
 
 	}
 
